@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.ecore.generated_package">
+      <package
+            class="org.modelversioning.emfprofile.EMFProfilePackage"
+            genModel="model/emfprofiles.genmodel"
+            uri="http://www.modelversioning.org/emfprofile/1.1">
+      </package>
+      <package
+            class="org.modelversioning.emfprofileapplication.EMFProfileApplicationPackage"
+            genModel="model/emfprofileapplication.genmodel"
+            uri="http://www.modelversioning.org/emfprofile/application/1.1">
+      </package>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated emfprofileapplication -->
+      <package
+            uri="http://www.modelversioning.org/emfprofile/application/1.1"
+            class="org.modelversioning.emfprofileapplication.EMFProfileApplicationPackage"
+            genModel="model/emfprofileapplication.genmodel"/>
+   </extension>
+
+</plugin>

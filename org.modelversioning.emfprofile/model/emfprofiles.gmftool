@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="emfprofilePalette">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="EMF Profiles"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Stereotype"
+          description="Create new Stereotype"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Tagged Value"
+          description="Add a new tagged value to a stereotype"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Extension"
+          description="Create new extension relationship"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Operation"
+          description="Add a new Operation to a stereotype"/>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Ecore"
+        description=""
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="EClass"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Generalization"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Reference"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Package"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Enumeration"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="DataType"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Literal"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Attribute"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Operation"/>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

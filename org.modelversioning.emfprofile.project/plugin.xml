@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="org.modelversioning.emfprofile.project.nature"
+         name="EMF Profile Project Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="org.modelversioning.emfprofile.project.EMFProfileProjectNature">
+         </run>
+      </runtime>
+      <requires-nature
+            id="org.eclipse.pde.PluginNature">
+      </requires-nature>
+   </extension>
+
+</plugin>

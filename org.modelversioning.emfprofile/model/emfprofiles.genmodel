@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2010 - 2012 modelversioning.org&#xA;All rights reserved. This program and the accompanying materials are&#xA;made available under the terms of the Eclipse Public License v1.0 which&#xA;accompanies this distribution, and is available at&#xA; http://www.eclipse.org/legal/epl-v10.html"
+    modelDirectory="/org.modelversioning.emfprofile/src" editDirectory="/org.modelversioning.emfprofile.edit/src"
+    editorDirectory="/org.modelversioning.emfprofile.editor/src" modelPluginID="org.modelversioning.emfprofile"
+    dynamicTemplates="true" modelName="EMFProfile" modelPluginClass="" testsDirectory="/org.modelversioning.emfprofile.tests/src"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    editPluginID="org.modelversioning.emfprofile.edit" editorPluginID="org.modelversioning.emfprofile.editor"
+    testsPluginID="org.modelversioning.emfprofile.tests" language="" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <foreignModel>emfprofiles.ecore</foreignModel>
+  <genPackages prefix="EMFProfile" basePackage="org.modelversioning" disposableProviderFactory="true"
+      generateExampleClass="false" fileExtensions="emfprofile" ecorePackage="emfprofiles.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="emfprofiles.ecore#//Position">
+      <genEnumLiterals ecoreEnumLiteral="emfprofiles.ecore#//Position/Before"/>
+      <genEnumLiterals ecoreEnumLiteral="emfprofiles.ecore#//Position/Around"/>
+      <genEnumLiterals ecoreEnumLiteral="emfprofiles.ecore#//Position/After"/>
+    </genEnums>
+    <genClasses ecoreClass="emfprofiles.ecore#//Profile">
+      <genOperations ecoreOperation="emfprofiles.ecore#//Profile/getApplicableStereotypes">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Profile/getApplicableStereotypes/eClass"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Profile/getStereotypes"/>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Profile/getStereotype">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Profile/getStereotype/stereotypeName"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="emfprofiles.ecore#//Stereotype">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emfprofiles.ecore#//Stereotype/iconPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emfprofiles.ecore#//Stereotype/metaBase"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emfprofiles.ecore#//Stereotype/extensions"/>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/isApplicable">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/isApplicable/eClass"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/isApplicable.1">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/isApplicable.1/eObject"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/isApplicable.2">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/isApplicable.2/eObject"/>
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/isApplicable.2/appliedExtensions"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/isApplicable.3">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/isApplicable.3/eObject"/>
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/isApplicable.3/extension"/>
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/isApplicable.3/appliedExtensions"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getProfile"/>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getAllExtensions"/>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getOperations"/>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getOperation">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/getOperation/name"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getTaggedValues"/>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getTaggedValue">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/getTaggedValue/name"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getApplicableExtensions">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/getApplicableExtensions/eObject"/>
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/getApplicableExtensions/appliedExtensions"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getApplicableExtensions.1">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/getApplicableExtensions.1/eClass"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/getApplicableExtensions.2">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Stereotype/getApplicableExtensions.2/eObject"/>
+      </genOperations>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Stereotype/hasIcon"/>
+    </genClasses>
+    <genClasses ecoreClass="emfprofiles.ecore#//Extension">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference emfprofiles.ecore#//Extension/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emfprofiles.ecore#//Extension/target"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute emfprofiles.ecore#//Extension/constraints"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emfprofiles.ecore#//Extension/lowerBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emfprofiles.ecore#//Extension/upperBound"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emfprofiles.ecore#//Extension/redefined"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emfprofiles.ecore#//Extension/subsetted"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference emfprofiles.ecore#//Extension/redefining"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference emfprofiles.ecore#//Extension/subsetting"/>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Extension/isRequired"/>
+      <genOperations ecoreOperation="emfprofiles.ecore#//Extension/isApplicable">
+        <genParameters ecoreParameter="emfprofiles.ecore#//Extension/isApplicable/eClass"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="emfprofiles.ecore#//Operation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emfprofiles.ecore#//Operation/position"/>
+      <genFeatures createChild="false" propertyCategory="" propertyDescription=""
+          propertyMultiLine="true" ecoreFeature="ecore:EAttribute emfprofiles.ecore#//Operation/body"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emfprofiles.ecore#//Operation/joinpoint"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
